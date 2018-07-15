@@ -50,35 +50,25 @@ header ul a {
 	color: #fff;
 }
 
-#header-bg div p:first-child {
-	font-size:40px;
-}
-
-#header-bg div p:last-child {
-	font-size:20px;
-}
-
 table {
 	font-size: 12px;
 }
 
-header ul a, #header-bg div p, #blue-bg p a, h3, #hot p a, table tr td a {
+nav a, #header-bg div p, .blue-bg p a, h3, #hot p a, table tr td a, label, footer header {
 	text-transform: uppercase;
 }
 
 /*--------------------------------------------------------------
 1.1 - Headings
 -------------------------------------------------------------- */
-h2 {
-	font-size: 20pt;
-	font-weight: 100;
+
+.blue-bg header {
 	display: inline-block;
 }
 
-#blue-bg header {
-	display: inline-block;
+body > header:first-of-type {
+	padding-top: 50px;
 }
-
 
 /*--------------------------------------------------------------
 1.2 - Body Copy
@@ -91,20 +81,20 @@ li a, p a, table tr td a {
 /*--------------------------------------------------------------
 1.3 - Buttons
 -------------------------------------------------------------- */
-header ul a {
+nav a {
 	color: #fff;
 	background-color: #ff8261;
-	padding: 15px; /* set to 22px get rid of white space between buttons*/
-	margin: 0;
+	padding: 15px; /* set to 22px. get rid of white space between buttons*/
+	margin: 0 auto; 
 }
 
-#blue-bg p a  {
+.blue-bg p a  {
 	background-color: #ff8261;
 	color: #fff;
 	padding: 20px 70px;
 }
 
-#hot p a {
+#hot p a, label {
 	padding: 20px 60px;
 }
 
@@ -112,23 +102,46 @@ header ul a {
 	padding: 16px 30px;
 }
 
-#hot p a, table tr:last-child td a, table tr:first-child td a:hover {
+#hot p a, table tr:last-child td a, table tfoot tr:first-child td a, label {
 	background-color: #ff8261;
 }
 
-#hot p a, table tr td a {
+#hot p a, table tr td a, label {
 	color: #fff;
 }
 
-header ul a:hover, #blue-bg p a:hover, #hot p a:hover, table tr:last-child td a:hover, table tr:first-child td a {
+nav a:hover, .blue-bg p a:hover, #hot p a:hover, table tr:last-child td a:hover, table tr:first-child td a:hover, label:hover {
 	background-color: #52cbf8;
+}
+
+/*--------------------------------------------------------------
+1.4 - Forms
+-------------------------------------------------------------- */
+.blue-bg > input {
+	width: 715px;
+	height: 50px;
+}
+
+textarea {
+	width: 430px;
+	height: 53px;
+	display: inline-block;
+}
+
+label {
+	display: none;
+}
+
+input {
+	width: 165px;
+	height: 53px;
 }
 
 /*--------------------------------------------------------------
 1.5 - Lists
 -------------------------------------------------------------- */
 
-header ul, #hosting ul {
+nav, #hosting ul, footer div li {
 	list-style: none;
 }
 
@@ -136,8 +149,10 @@ header ul li {
 	display: inline-block;
 }
 
-#hot ul li {
+header div > ul {
+	float: right;
 }
+
 
 /*--------------------------------------------------------------
 1.6 - Tables
@@ -150,7 +165,11 @@ table {
 	border: 1pt solid #e1eff4;
 }
 
-table tr:nth-child(2) td, table tr:nth-child(3) td, table tr:nth-child(4) td, table tr:nth-child(5) td {
+table tr:nth-child(2) td {
+	border-top: 1pt solid #e1eff4;
+}
+
+table tr:nth-child(2) td, table tr:nth-child(3) td, table tr:nth-child(4) td {
 	border-bottom: 1pt solid #e1eff4;
 }
 
@@ -162,7 +181,7 @@ table tr:nth-child(2) td, table tr:nth-child(3) td, table tr:nth-child(4) td, ta
 	height: 570px;
 } 
 
-#blue-bg {
+.blue-bg {
 	background-color: #e4eff7;
 }
 
@@ -170,11 +189,19 @@ table tr:nth-child(2) td, table tr:nth-child(3) td, table tr:nth-child(4) td, ta
 	background-color: #fffbde;
 }
 
+footer {
+	background-color: #4c515b;
+}
+
 /*--------------------------------------------------------------
 5.2 - Text Colors
 -------------------------------------------------------------- */
 h3, table {
 	color: #556b72;
+}
+
+footer li a, footer p, span {
+	color: #909aad;
 }
 
 
@@ -202,8 +229,11 @@ header .wrapper:first-child div:nth-child(2) p {
 	display: inline-block;
 }
 
-#benefits .col p {
+#benefits .col p, header div > ul a {
 	color: #a0a9b6;
+}
+
+#benefits .col p {
 	line-height: 30px;
 }
 
@@ -216,7 +246,7 @@ header .wrapper:first-child div:nth-child(2) p {
 	margin-left: 45px;
 }
 
-#benefits, #hot, #hosting div .row {
+#benefits, #hot, #hosting, .blue-bg:last-of-type {
 	padding: 90px 0;
 }
 
@@ -230,7 +260,7 @@ header .wrapper:first-child div:nth-child(2) p {
 	line-height: 40px;
 }
 
-#blue-bg p a, #hot p a {
+.blue-bg:first-of-type p a, #hot p a {
 	float: right;
 }
 
@@ -272,3 +302,64 @@ table tr {
 	width: 30px;
 }
 
+footer {
+	padding: 100px 0;
+	font-size: 12px;
+}
+
+footer .row div {
+	float: left;
+}
+
+footer .wrapper div:first-of-type {
+	margin-top: 100px;
+}
+
+footer header, footer li a:hover, footer div:nth-child(3) li {
+	color: #e7f4f8;
+}
+
+footer div ul, footer div ul:nth-child(2) {
+	padding: 0;
+}
+
+footer div ul li {
+	margin-bottom: 20px;
+}
+
+footer div ul {
+	float: left;
+}
+
+footer div ul:nth-child(3) {
+	margin-left: 65px;
+}
+
+footer .wrapper div:nth-child(2), footer .wrapper div:nth-child(3), footer .wrapper div:nth-child(4) {
+	margin-left: 110px;
+}
+
+h4,  header div > ul {
+	margin-top: 0;
+}
+
+header div > ul a:hover {
+	color: #000;
+}
+
+header img {
+	margin-bottom: 50px;
+}
+
+nav ul {
+	padding: 0;
+	text-align: center; 
+}
+
+footer div > p {
+	margin: 5px 0 5px 60px;
+}
+
+#benefits div .row:last-child .col:first-child img {
+	display: inline-block;
+}

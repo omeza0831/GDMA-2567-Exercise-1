@@ -16,50 +16,58 @@
 	
 <header>
 	<div class="row wrapper">
-		<div>hosting</div>
-		<div>
-			<p>support: <a href="mailto:info@webhosting.com">info@webhosting.com</a></p>
-			<p><a href="#">Regester</a></p>
-			<p><a href="#">Login</a></p>
-		</div>
-	</div>
-	
-	<div class="row wrapper">
+		<img src="img/logo.png" alt="">
+		<ul>
+			<li>Support: <a href="mailto:info@webhosting.com">info@webhosting.com</a></li>
+			<li><a href="#">Regester</a></li>
+			<li><a href="#">Login</a></li>
+		</ul>
+		
 		<nav>
 			<ul>
 				<li><a href="#">home</a></li>
-				<li><a href="">about us</a></li>
-				<li><a href="">services</a></li>
-				<li><a href="">hosting plans</a></li>
-				<li><a href="">domain</a></li>
-				<li><a href="">faq</a></li>
-				<li><a href="">testimonials</a></li>
-				<li><a href="">blog</a></li>
-				<li><a href="">support</a></li>
-				<li><a href="">contact us</a></li>
+				<li><a href="#">about us</a></li>
+				<li><a href="#">services</a></li>
+				<li><a href="#hosting">hosting plans</a></li>
+				<li><a href="#">domain</a></li>
+				<li><a href="#">faq</a></li>
+				<li><a href="#">testimonials</a></li>
+				<li><a href="#">blog</a></li>
+				<li><a href="#">support</a></li>
+				<li><a href="#">contact us</a></li>
 			</ul>
 		</nav>
 	</div>
-	
+
 	
 	<!-- bg photo -->
 	<div id="header-bg">
 		<div class="wrapper">
-			<p>awesome hosting</p>
-			<p>with unlimited features</p>
+			<p>awesome hosting<br> with unlimited features</p>
 		</div>
 	</div>
+</header>
 	
 	<!-- bg blue -->
-	<div id="blue-bg">
+	<div class="blue-bg">
 		<div class="row wrapper">
 			<header>
 				<h2>search your domain</h2>
 			</header>
+			<textarea name="Enter your domain name" rows="10" cols="10"></textarea>
+			
+			<label for="date">Date</label>
+			<input id="date" type="date" name="date">
+			
+			<select name="domain"> 
+				<option value=".com">.com</option>
+				<option value=".net">.net</option>
+				<option value=".org">.org</option>
+			</select>
+			
 			<p><a href="#">search</a></p>
 		</div>
 	</div>
-</header>
 	
 	
 	
@@ -78,16 +86,9 @@
 				</header>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
 			</div>
-				<div>
-				<div></div> <!-- how do i place img or with <p>? -->
-				<header>
-					<h3>DNS control</h3>
-				</header>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-			</div>
 		</div>
-		
-			<div class="col">
+			
+		<div class="col">
 			<div>
 				<div></div> <!-- how do i place img or with <p>? -->
 				<header>
@@ -95,7 +96,35 @@
 				</header>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
 			</div>
+		</div>
+			
+		<div class="col">
+			<div>
+				<div></div> <!-- how do i place img or with <p>? -->
+				<header>
+					<h3>protect your pc</h3>
+				</header>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+			</div>
+		</div>
+	</div>
+			
+	<div class="row">
+		<div class="col">
+			<div>
 				<div>
+					<img src="img/benefits-icon-4.png" alt=""><!-- how do i place img or with <p>? -->
+					<header>
+						<h3>DNS control</h3>
+					</header>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="col">
+			<div>
 				<div></div> <!-- how do i place img or with <p>? -->
 				<header>
 					<h3>domain transfer</h3>
@@ -104,15 +133,8 @@
 			</div>
 		</div>
 		
-			<div class="col">
+		<div class="col">
 			<div>
-				<div></div> <!-- how do i place img or with <p>? -->
-				<header>
-					<h3>protect your pc</h3>
-				</header>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-			</div>
-				<div>
 				<div></div> <!-- how do i place img or with <p>? -->
 				<header>
 					<h3>100% security</h3>
@@ -124,7 +146,7 @@
 </section>
 	
 <!-- now whats hot section -->
-<section id="hot">
+<div id="hot">
 	<div class="row wrapper">
 		<div class="col">
 			<header>
@@ -138,24 +160,28 @@
 				<h2>our features</h2>
 			</header>
 			
-			<div></div>
-				<ul>
-					<li>Lorem Ipsum is simply dummy.</li>
-					<li>Discovered the undoubtable.</li>
-					<li> Various versions have evolved.</li>
-					<li>Suffered alteration in some.</li>
-				</ul>
+			<div class="row">
+				<div>
+					<ul>
+						<li>Lorem Ipsum is simply dummy.</li>
+						<li>Discovered the undoubtable.</li>
+						<li> Various versions have evolved.</li>
+						<li>Suffered alteration in some.</li>
+					</ul>
+				</div>
+				<div>
 				<ul>
 					<li>Specimen book.</li>
 					<li>Lpsum generators.</li>
 					<li>Sentence structures.</li>
 					<li>Embarrassing hidden.</li>
 				</ul>
+				</div>
+				<p><a href="#">view all</a></p>
+			</div>
 		</div>
-		
-		<p><a href="#">view all</a></p>
 	</div>
-</section>
+</div>
 	
 <!-- our hosting section -->
 <section class="wrapper" id="hosting">
@@ -164,153 +190,120 @@
 	</header>
 	
 	<div class="row">
-				<table>
+		<table>
 			<caption>montly rates</caption>
 			<thead>
 				<tr>
 					<th>$5 per month</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td><a href="#">standard plan</a></td>
-				</tr>
-				<tr>
-					<td>10GB Disk Space</td>
-				</tr>
-				<tr>
-					<td>1TB Bandwidth</td>
-				</tr>
-				<tr>
-					<td>Free DDoS Protection</td>
-				</tr>
-				<tr>
-					<td>Free Daily Backups</td>
-				</tr>
-				<tr>
-					<td>Managed Hosting</td>
-				</tr>
-				<tr>
-					<td><a href="#">signup</a></td>
-				</tr>
-			</tbody>
-		</table>
-			
-		<table>
-			<caption>montly rates</caption>
-			<thead>
-				<tr>
 					<th>$6 per month</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td><a href="#">advanced plan</a></td>
-				</tr>
-				<tr>
-					<td>10GB Disk Space</td>
-				</tr>
-				<tr>
-					<td>1TB Bandwidth</td>
-				</tr>
-				<tr>
-					<td>Free DDoS Protection</td>
-				</tr>
-				<tr>
-					<td>Free Daily Backups</td>
-				</tr>
-				<tr>
-					<td>Managed Hosting</td>
-				</tr>
-				<tr>
-					<td><a href="#">signup</a></td>
-				</tr>
-			</tbody>
-		</table>
-		
-		<table>
-			<caption>montly rates</caption>
-			<thead>
-				<tr>
 					<th>$8 per month</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td><a href="#">business plan</a></td>
-				</tr>
-				<tr>
-					<td>10GB Disk Space</td>
-				</tr>
-				<tr>
-					<td>1TB Bandwidth</td>
-				</tr>
-				<tr>
-					<td>Free DDoS Protection</td>
-				</tr>
-				<tr>
-					<td>Free Daily Backups</td>
-				</tr>
-				<tr>
-					<td>Managed Hosting</td>
-				</tr>
-				<tr>
-					<td><a href="#">signup</a></td>
-				</tr>
-			</tbody>
-		</table>
-		
-		<table>
-			<caption>montly rates</caption>
-			<thead>
-				<tr>
 					<th>$9 per month</th>
 				</tr>
+				<tr>
+					<th>standard plan</th>
+					<th>advanced plan</th>
+					<th>business plan</th>
+					<th>gold plan</th>
+				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td><a href="#">gold plan</a></td>
-				</tr>
-				<tr>
+					<td>10GB Disk Space</td>
+					<td>10GB Disk Space</td>
+					<td>10GB Disk Space</td>
 					<td>10GB Disk Space</td>
 				</tr>
 				<tr>
 					<td>1TB Bandwidth</td>
+					<td>1TB Bandwidth</td>
+					<td>1TB Bandwidth</td>
+					<td>1TB Bandwidth</td>
 				</tr>
 				<tr>
+					<td>Free DDoS Protection</td>
+					<td>Free DDoS Protection</td>
+					<td>Free DDoS Protection</td>
 					<td>Free DDoS Protection</td>
 				</tr>
 				<tr>
 					<td>Free Daily Backups</td>
+					<td>Free Daily Backups</td>
+					<td>Free Daily Backups</td>
+					<td>Free Daily Backups</td>
 				</tr>
 				<tr>
 					<td>Managed Hosting</td>
-				</tr>
-				<tr>
-					<td><a href="#">signup</a></td>
+					<td>Managed Hosting</td>
+					<td>Managed Hosting</td>
+					<td>Managed Hosting</td>
 				</tr>
 			</tbody>
+			<tfoot>
+				<tr>
+					<td><a href="#">signup</a></td>
+					<td><a href="#">signup</a></td>
+					<td><a href="#">signup</a></td>
+					<td><a href="#">signup</a></td>
+				</tr>
+			</tfoot>
 		</table>
-
 		
 	</div>
 		
 </section>
 
 <!-- bg grey -->
-<section>
+<div class="blue-bg">
 	<div class="row wrapper">
-		
+		<header>
+			<h2>sign up your newletter</h2>
+		</header>
+		<input id="email" type="email" name="email">
+		<label for="email">sign up now</label>
 	</div>
-</section>
+</div>
 	
 <!-- bg black -->
 <footer>
 	<div class="row wrapper">
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
+		<div>
+			<img src="img/logo-white.png" alt="">
+			<p>2015 © Allright Reserved</p>
+		</div>
+		<div>
+			<header>
+				<h4>quick links</h4>
+			</header>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Service</a></li>
+				<li><a href="#hosting">Hosting Plans</a></li>
+				<li><a href="#">Domanins</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Faq</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Support</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<div>
+			<header>
+				<h4>contact us</h4>
+			</header>
+			<ul>
+				<li>Address: <span>9867 Marshall Dr.</span></li>
+				<li><span>West Lake, Utah 38475</span></li>
+				<li>Email: <a href="mailto:info@hosting.com">info@hosting.com</a></li>
+				<li>Call: <a href="tel:+87 7765 557 888">+87 7765 557 888</a></li>
+			</ul>
+		</div>
+		<div>
+			<header>
+				<h4>social media</h4>
+			</header>
+		</div>
 	</div>
 </footer>
 	
