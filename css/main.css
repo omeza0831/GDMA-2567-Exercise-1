@@ -363,3 +363,21 @@ footer div > p {
 #benefits div .row:last-child .col:first-child img {
 	display: inline-block;
 }
+
+#benefits div img {
+	float: left;
+	display: inline-block;
+	margin-right: 25px;
+}
+
+#hot .wrapper .col:first-child {
+	display: inline-block;
+}
+
+#hot .wrapper .col:last-child {
+	float: right;
+	display: inline-block;
+}
+
+
+
