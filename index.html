@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 	
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 	
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
@@ -16,7 +18,7 @@
 	
 <header>
 	<div class="row wrapper">
-		<img src="img/logo.png" alt="">
+		<img src="img/logo.png">
 		<ul>
 			<li>Support: <a href="mailto:info@webhosting.com">info@webhosting.com</a></li>
 			<li><a href="#">Regester</a></li>
@@ -28,7 +30,7 @@
 				<li><a href="#">home</a></li>
 				<li><a href="#">about us</a></li>
 				<li><a href="#">services</a></li>
-				<li><a href="#hosting">hosting plans</a></li>
+				<li><a href="#">hosting plans</a></li>
 				<li><a href="#">domain</a></li>
 				<li><a href="#">faq</a></li>
 				<li><a href="#">testimonials</a></li>
@@ -43,18 +45,19 @@
 	<!-- bg photo -->
 	<div id="header-bg">
 		<div class="wrapper">
-			<p>awesome hosting<br> with unlimited features</p>
+			<h1>awesome hosting<br> with unlimited features</h1>
 		</div>
 	</div>
 </header>
 	
 	<!-- bg blue -->
-	<div class="blue-bg">
+	<section class="blue-bg">
 		<div class="row wrapper">
+			<img src="img/search-icon.png">
 			<header>
 				<h2>search your domain</h2>
 			</header>
-			<textarea name="Enter your domain name" rows="10" cols="10"></textarea>
+			<textarea name="Enter your domain name" rows="10" cols="10"></textarea> <!-- should be a single line input area. CHANGE IT -->
 			
 			<label for="date">Date</label>
 			<input id="date" type="date" name="date">
@@ -67,7 +70,7 @@
 			
 			<p><a href="#">search</a></p>
 		</div>
-	</div>
+	</section>
 	
 	
 	
@@ -77,20 +80,18 @@
 		<h2>our benefits</h2>
 	</header>
 	
-	<div class="row">
+	<div class="row col">
 		<div class="col">
-			<div>
-				<div></div> <!-- how do i place img or with <p>? -->
-				<header>
-					<h3>99.9% Uptime</h3>
-				</header>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-			</div>
+			<img src="img/uptime-icon-1.png"> <!-- how do i place img or with p? NO DIVS NEEDED USE IMG -->
+			<header>
+				<h3>99.9% Uptime</h3>
+			</header>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
 		</div>
 			
 		<div class="col">
 			<div>
-				<div></div> <!-- how do i place img or with <p>? -->
+				<img src="img/support-icon-2.png">
 				<header>
 					<h3>24/7/365 support</h3>
 				</header>
@@ -100,7 +101,7 @@
 			
 		<div class="col">
 			<div>
-				<div></div> <!-- how do i place img or with <p>? -->
+				<img src="img/protect-icon-3.png">
 				<header>
 					<h3>protect your pc</h3>
 				</header>
@@ -113,7 +114,7 @@
 		<div class="col">
 			<div>
 				<div>
-					<img src="img/benefits-icon-4.png" alt=""><!-- how do i place img or with <p>? -->
+					<img src="img/benefits-icon-4.png">
 					<header>
 						<h3>DNS control</h3>
 					</header>
@@ -125,7 +126,7 @@
 		
 		<div class="col">
 			<div>
-				<div></div> <!-- how do i place img or with <p>? -->
+				<img src="img/domain-icon-5.png">
 				<header>
 					<h3>domain transfer</h3>
 				</header>
@@ -135,7 +136,7 @@
 		
 		<div class="col">
 			<div>
-				<img src="img/security-icon-6.png" alt=""> <!-- how do i place img or with <p>? -->
+				<img src="img/security-icon-6.png">
 				<header>
 					<h3>100% security</h3>
 				</header>
@@ -146,16 +147,13 @@
 </section>
 	
 <!-- now whats hot section -->
-<div id="hot">
+<section id="hot">
 	<div class="row wrapper">
 		<div class="col">
 			<header>
 				<h2>now what is hot</h2>
 			</header>
-			<div>
-				<img src="img/add.png" alt="">
-			</div>
-			<!-- place promo img here -->
+				<img src="img/add.png">
 		</div>
 		
 		<div class="col">
@@ -184,7 +182,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 	
 <!-- our hosting section -->
 <section class="wrapper" id="hosting">
@@ -192,7 +190,6 @@
 		<h2>our hosting</h2>
 	</header>
 	
-	<div class="row">
 		<table>
 			<caption>montly rates</caption>
 			<thead>
@@ -251,13 +248,12 @@
 			</tfoot>
 		</table>
 		
-	</div>
-		
 </section>
 
 <!-- bg grey -->
 <div class="blue-bg">
 	<div class="row wrapper">
+		<img src="img/signup-icon.png">
 		<header>
 			<h2>sign up your newletter</h2>
 		</header>
@@ -270,7 +266,7 @@
 <footer>
 	<div class="row wrapper">
 		<div>
-			<img src="img/logo-white.png" alt="">
+			<img src="img/logo-white.png">
 			<p>2015 © Allright Reserved</p>
 		</div>
 		<div>
@@ -281,7 +277,7 @@
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About Us</a></li>
 				<li><a href="#">Service</a></li>
-				<li><a href="#hosting">Hosting Plans</a></li>
+				<li><a href="#">Hosting Plans</a></li>
 				<li><a href="#">Domanins</a></li>
 			</ul>
 			<ul>
@@ -299,13 +295,19 @@
 				<li>Address: <span>9867 Marshall Dr.</span></li>
 				<li><span>West Lake, Utah 38475</span></li>
 				<li>Email: <a href="mailto:info@hosting.com">info@hosting.com</a></li>
-				<li>Call: <a href="tel:+87 7765 557 888">+87 7765 557 888</a></li>
+				<li>Call: <a href="tel:877765557888">+87 7765 557 888</a></li>
 			</ul>
 		</div>
 		<div>
 			<header>
 				<h4>social media</h4>
 			</header>
+			<ul>
+				<li><i class="fab fa-facebook-f"></i></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
 		</div>
 	</div>
 </footer>

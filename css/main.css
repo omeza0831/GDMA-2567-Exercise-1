@@ -41,20 +41,19 @@ header ul a {
 	font-weight: 100;
 }
 
-#header-bg div p {
+h1 {
 	margin: 0 auto;
 	text-align: center;
-	position: relative;
 	left: 0;
-	top: 375px;
 	color: #fff;
+	padding-top: 375px;
 }
 
 table {
 	font-size: 12px;
 }
 
-nav a, #header-bg div p, .blue-bg p a, h3, #hot p a, table tr td a, label, footer header {
+nav a, #header-bg div p, .blue-bg p a, h3, #hot p a, table tr td a, label, footer header, h1 {
 	text-transform: uppercase;
 }
 
@@ -84,7 +83,7 @@ li a, p a, table tr td a {
 nav a {
 	color: #fff;
 	background-color: #ff8261;
-	padding: 15px; /* set to 22px. get rid of white space between buttons*/
+	padding: 15px 20px; /* set to 22px. get rid of white space between buttons*/
 	margin: 0 auto; 
 }
 
@@ -102,8 +101,13 @@ nav a {
 	padding: 16px 30px;
 }
 
-#hot p a, table tr:last-child td a, table tfoot tr:first-child td a, label {
+#hot p a, table tr:last-child td a, table tfoot tr:first-child td a, label, header nav ul {
 	background-color: #ff8261;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 14px 0;
 }
 
 #hot p a, table tr td a, label {
@@ -177,12 +181,18 @@ table tr:nth-child(2) td, table tr:nth-child(3) td, table tr:nth-child(4) td {
 5.1 - Background Colors
 -------------------------------------------------------------- */
 #header-bg {
-	background: url("../img/header-bg.png") no-repeat;
+	background: url("../img/header-bg.jpg") no-repeat;
+	-o-background-size: cover; 
+	-ms-background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;/*add prefixes */
 	height: 570px;
 } 
 
 .blue-bg {
 	background-color: #e4eff7;
+	padding: 50px 0;
 }
 
 #hot {
@@ -196,7 +206,7 @@ footer {
 /*--------------------------------------------------------------
 5.2 - Text Colors
 -------------------------------------------------------------- */
-h3, table {
+h3, table, h2 {
 	color: #556b72;
 }
 
@@ -379,5 +389,8 @@ footer div > p {
 	display: inline-block;
 }
 
+#benefits img {
+	display: block;
+}
 
 
