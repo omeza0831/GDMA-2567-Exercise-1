@@ -3,8 +3,6 @@
 <head>
 <meta charset="UTF-8">
 	
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-	
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 	
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
@@ -18,7 +16,7 @@
 	
 <header>
 	<div class="row wrapper">
-		<img src="img/logo.png">
+		<img src="img/logo.png" alt="">
 		<ul>
 			<li>Support: <a href="mailto:info@webhosting.com">info@webhosting.com</a></li>
 			<li><a href="#">Regester</a></li>
@@ -53,22 +51,25 @@
 	<!-- bg blue -->
 	<section class="blue-bg">
 		<div class="row wrapper">
-			<img src="img/search-icon.png">
 			<header>
+				<img src="img/search-icon.png" alt="">
 				<h2>search your domain</h2>
-			</header>
-			<textarea name="Enter your domain name" rows="10" cols="10"></textarea> <!-- should be a single line input area. CHANGE IT -->
-			
-			<label for="date">Date</label>
-			<input id="date" type="date" name="date">
-			
-			<select name="domain"> 
-				<option value=".com">.com</option>
-				<option value=".net">.net</option>
-				<option value=".org">.org</option>
-			</select>
-			
-			<p><a href="#">search</a></p>
+			</header> <!-- add width (done) -->
+			<form><!-- add width -->
+				<input id="name" type="name" name="name">
+				<label for="name">sign up now</label>
+
+				<label for="date">Date</label>
+				<input id="date" type="date" name="date">
+
+				<select name="domain"> 
+					<option value=".com">.com</option>
+					<option value=".net">.net</option>
+					<option value=".org">.org</option>
+				</select>
+
+				<p><a href="#">search</a></p>
+			</form>
 		</div>
 	</section>
 	
@@ -80,69 +81,71 @@
 		<h2>our benefits</h2>
 	</header>
 	
-	<div class="row col">
-		<div class="col">
-			<img src="img/uptime-icon-1.png"> <!-- how do i place img or with p? NO DIVS NEEDED USE IMG -->
+	<div class="row">
+		<section class="col row">
+			<img src="img/uptime-icon-1.png" alt=""> <!--make all img in this section block!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+			<div>
 			<header>
 				<h3>99.9% Uptime</h3>
 			</header>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-		</div>
+			</div>
+		</section>
 			
-		<div class="col">
+		<section class="col row">
 			<div>
-				<img src="img/support-icon-2.png">
+				<img src="img/support-icon-2.png" alt="">
 				<header>
 					<h3>24/7/365 support</h3>
 				</header>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
 			</div>
-		</div>
+		</section>
 			
-		<div class="col">
+		<section class="col row">
 			<div>
-				<img src="img/protect-icon-3.png">
+				<img src="img/protect-icon-3.png" alt="">
 				<header>
 					<h3>protect your pc</h3>
 				</header>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
 			</div>
-		</div>
+		</section>
 	</div>
 			
 	<div class="row">
-		<div class="col">
+		<section class="col row">
 			<div>
 				<div>
-					<img src="img/benefits-icon-4.png">
+					<img src="img/benefits-icon-4.png" alt="">
 					<header>
 						<h3>DNS control</h3>
 					</header>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
 				</div>
 			</div>
-		</div>
+		</section>
 		
 		
-		<div class="col">
+		<section class="col row">
 			<div>
-				<img src="img/domain-icon-5.png">
+				<img src="img/domain-icon-5.png" alt="">
 				<header>
 					<h3>domain transfer</h3>
 				</header>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
 			</div>
-		</div>
+		</section>
 		
-		<div class="col">
+		<section class="col row">
 			<div>
-				<img src="img/security-icon-6.png">
+				<img src="img/security-icon-6.png" alt="">
 				<header>
 					<h3>100% security</h3>
 				</header>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
 			</div>
-		</div>
+		</section>
 	</div>
 </section>
 	
@@ -153,7 +156,7 @@
 			<header>
 				<h2>now what is hot</h2>
 			</header>
-				<img src="img/add.png">
+				<img src="img/add.png" alt>
 		</div>
 		
 		<div class="col">
@@ -253,12 +256,14 @@
 <!-- bg grey -->
 <div class="blue-bg">
 	<div class="row wrapper">
-		<img src="img/signup-icon.png">
+		<img src="img/signup-icon.png" alt="">
 		<header>
 			<h2>sign up your newletter</h2>
 		</header>
-		<input id="email" type="email" name="email">
-		<label for="email">sign up now</label>
+		<form>
+			<input id="email" type="email" name="email">
+			<label for="email">sign up now</label>
+		</form>
 	</div>
 </div>
 	
@@ -266,13 +271,11 @@
 <footer>
 	<div class="row wrapper">
 		<div>
-			<img src="img/logo-white.png">
+			<img src="img/logo-white.png" alt="hosting">
 			<p>2015 © Allright Reserved</p>
 		</div>
-		<div>
-			<header>
-				<h4>quick links</h4>
-			</header>
+		<section>
+			<h4>quick links</h4>
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About Us</a></li>
@@ -286,29 +289,25 @@
 				<li><a href="#">Support</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
-		</div>
-		<div>
-			<header>
-				<h4>contact us</h4>
-			</header>
+		</section>
+		<section>
+			<h4>contact us</h4>
 			<ul>
 				<li>Address: <span>9867 Marshall Dr.</span></li>
 				<li><span>West Lake, Utah 38475</span></li>
 				<li>Email: <a href="mailto:info@hosting.com">info@hosting.com</a></li>
 				<li>Call: <a href="tel:877765557888">+87 7765 557 888</a></li>
 			</ul>
-		</div>
-		<div>
-			<header>
-				<h4>social media</h4>
-			</header>
+		</section>
+		<section>
+			<h4>social media</h4>
 			<ul>
-				<li><i class="fab fa-facebook-f"></i></li>
+				<li></li>
 				<li></li>
 				<li></li>
 				<li></li>
 			</ul>
-		</div>
+		</section>
 	</div>
 </footer>
 	

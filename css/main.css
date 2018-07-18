@@ -36,6 +36,10 @@
 	letter-spacing: 1px;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 header ul a {
 	font-size: 10pt;
 	font-weight: 100;
@@ -53,7 +57,7 @@ table {
 	font-size: 12px;
 }
 
-nav a, #header-bg div p, .blue-bg p a, h3, #hot p a, table tr td a, label, footer header, h1 {
+nav a, #header-bg div p, .blue-bg p a, h3, #hot p a, table tr td a, label, h1, footer h4 {
 	text-transform: uppercase;
 }
 
@@ -121,17 +125,6 @@ nav a:hover, .blue-bg p a:hover, #hot p a:hover, table tr:last-child td a:hover,
 /*--------------------------------------------------------------
 1.4 - Forms
 -------------------------------------------------------------- */
-.blue-bg > input {
-	width: 715px;
-	height: 50px;
-}
-
-textarea {
-	width: 430px;
-	height: 53px;
-	display: inline-block;
-}
-
 label {
 	display: none;
 }
@@ -141,11 +134,28 @@ input {
 	height: 53px;
 }
 
+.blue-bg:first-of-type form {
+	width: 800px;
+	float: right;
+}
+
+.blue-bg:first-of-type form a, form {
+	display: inline-block;
+}
+
+form input, form a {
+	vertical-align: middle;
+}
+
+.blue-bg:last-child form input {
+	width: 700px;
+}
+
 /*--------------------------------------------------------------
 1.5 - Lists
 -------------------------------------------------------------- */
 
-nav, #hosting ul, footer div li {
+nav, #hosting ul, footer section li {
 	list-style: none;
 }
 
@@ -214,6 +224,10 @@ footer li a, footer p, span {
 	color: #909aad;
 }
 
+footer h4, footer ul li a:hover, footer li {
+	color: #d7e3e7;
+}
+
 
 /*--------------------------------------------------------------
 5.4 - Alignments
@@ -270,6 +284,10 @@ header .wrapper:first-child div:nth-child(2) p {
 	line-height: 40px;
 }
 
+#hot ul:last-child {
+	float: left;
+}
+
 .blue-bg:first-of-type p a, #hot p a {
 	float: right;
 }
@@ -282,12 +300,6 @@ header .wrapper:first-child div:nth-child(2) p {
 #hosting div {
 	margin: 30px 10px;
 	padding: 20px 10px;
-}
-
-
-table {
-	float: left;
-	display: inline-block;
 }
 
 table tr td {
@@ -317,38 +329,6 @@ footer {
 	font-size: 12px;
 }
 
-footer .row div {
-	float: left;
-}
-
-footer .wrapper div:first-of-type {
-	margin-top: 100px;
-}
-
-footer header, footer li a:hover, footer div:nth-child(3) li {
-	color: #e7f4f8;
-}
-
-footer div ul, footer div ul:nth-child(2) {
-	padding: 0;
-}
-
-footer div ul li {
-	margin-bottom: 20px;
-}
-
-footer div ul {
-	float: left;
-}
-
-footer div ul:nth-child(3) {
-	margin-left: 65px;
-}
-
-footer .wrapper div:nth-child(2), footer .wrapper div:nth-child(3), footer .wrapper div:nth-child(4) {
-	margin-left: 110px;
-}
-
 h4,  header div > ul {
 	margin-top: 0;
 }
@@ -357,7 +337,7 @@ header div > ul a:hover {
 	color: #000;
 }
 
-header img {
+header:first-of-type> div img {
 	margin-bottom: 50px;
 }
 
@@ -366,31 +346,52 @@ nav ul {
 	text-align: center; 
 }
 
-footer div > p {
-	margin: 5px 0 5px 60px;
-}
-
 #benefits div .row:last-child .col:first-child img {
-	display: inline-block;
-}
-
-#benefits div img {
-	float: left;
-	display: inline-block;
-	margin-right: 25px;
-}
-
-#hot .wrapper .col:first-child {
-	display: inline-block;
-}
-
-#hot .wrapper .col:last-child {
-	float: right;
 	display: inline-block;
 }
 
 #benefits img {
 	display: block;
+	margin-right: 25px;
+	float: left;
+	width: 50px;
 }
 
+#hot .wrapper .col:first-child {
+	display: inline-block;
+}
+ 
+footer section:nth-child(2), footer section:nth-child(3), footer div div {
+	float: left;
+}
 
+footer section:nth-child(2), footer section:nth-child(3), footer section:last-child {
+	margin-left: 135px;
+	line-height: 25px;
+}
+
+footer ul {
+	padding: 0;
+}
+
+footer div p {
+	margin: 0 0 0 60px;
+}
+
+footer div div {
+	margin-top: 150px;
+}
+
+footer section:last-child h4 {
+	display: inline-block;
+}
+
+#benefits section p {
+	width: 255px;
+	float: right;
+	margin-top: 0;
+}
+
+h3 {
+	margin-bottom: 0;
+}
